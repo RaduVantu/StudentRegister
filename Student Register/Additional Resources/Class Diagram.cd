@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Student_Register.AddStudent">
+    <Position X="0.5" Y="0.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>oA0EAQBASiC6EZABURGTRKQCIAYBjCAFBAEMywYAgDA=</HashCode>
+      <FileName>AddStudent.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="db" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="studentToAdd" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Student_Register.DataAccess">
+    <Position X="4.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAEAAAAAAAAAAAAAAABAQJAAEAQBAA=</HashCode>
+      <FileName>DataAccess.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Student_Register.DbConnect">
+    <Position X="13.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DbConnect.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Student_Register.EditStudentForm">
+    <Position X="16.25" Y="3.25" Width="2.25" />
+    <AssociationLine Name="studentToProfile" Type="Student_Register.Student" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="16.25" Y="14.562" />
+        <Point X="4.625" Y="14.562" />
+        <Point X="4.625" Y="12.757" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.296" Y="1.539" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="db" Type="Student_Register.DataAccess" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="16.25" Y="14.75" />
+        <Point X="3.946" Y="14.75" />
+        <Point X="3.946" Y="2.812" />
+        <Point X="4.5" Y="2.812" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>RIQAjCEBCKgUEFBgSALIAAAiBBAg9ECAIAAECBDIBCQ=</HashCode>
+      <FileName>EditStudent.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="studentToProfile" />
+      <Field Name="db" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Student_Register.HomeForm">
+    <Position X="7.25" Y="0.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>BxChERABgCQRMAgCAiSMkACCAEA5JwBAABggQAYgMIQ=</HashCode>
+      <FileName>HomeForm.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="db" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="studentResults" />
+      <Field Name="teacherResults" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Student_Register.PdfCreator">
+    <Position X="13.75" Y="1.75" Width="1.75" />
+    <AssociationLine Name="studentInfo" Type="Student_Register.Student" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="13.75" Y="2.688" />
+        <Point X="13.51" Y="2.688" />
+        <Point X="13.51" Y="12.997" />
+        <Point X="7.002" Y="12.997" Type="JumpStart" />
+        <Point X="6.835" Y="12.997" Type="JumpEnd" />
+        <Point X="5.938" Y="12.997" />
+        <Point X="5.938" Y="12.757" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.776" Y="0.298" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>EAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>PdfCreator.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="studentInfo" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Student_Register.Program">
+    <Position X="19" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Student_Register.Student">
+    <Position X="4.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAEIAAQiEoEAAAYAEgAAADAAAIAAAAAAAAAACAAA=</HashCode>
+      <FileName>Student.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Student_Register.StudentProfile">
+    <Position X="13.75" Y="3.75" Width="2.25" />
+    <AssociationLine Name="db" Type="Student_Register.DataAccess" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="13.75" Y="13.512" />
+        <Point X="6.919" Y="13.512" />
+        <Point X="6.919" Y="2.562" />
+        <Point X="6.25" Y="2.562" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="pdfCreator" Type="Student_Register.PdfCreator" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="15.812" Y="3.75" />
+        <Point X="15.812" Y="2.624" />
+        <Point X="15.5" Y="2.624" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="studentToProfile" Type="Student_Register.Student" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="13.75" Y="13.75" />
+        <Point X="5.281" Y="13.75" />
+        <Point X="5.281" Y="12.757" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.313" Y="0.748" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>bwAIAAAgACAQA5FggAmQAAACCAEGIBABIgAgAFAECaA=</HashCode>
+      <FileName>StudentProfile.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="db" />
+      <Field Name="pdfCreator" />
+      <Field Name="studentToProfile" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Student_Register.Teacher">
+    <Position X="4.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IIAAAEAAQQAAgEAACAAAgAAQBAAAIAAAAAAAAFAAAEA=</HashCode>
+      <FileName>Teacher.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Student_Register.TeacherProfile">
+    <Position X="11" Y="0.5" Width="2.25" />
+    <AssociationLine Name="teacherToProfile" Type="Student_Register.Teacher" ManuallyRouted="true">
+      <Path>
+        <Point X="11" Y="5.092" />
+        <Point X="10.5" Y="5.092" />
+        <Point X="10.5" Y="12.626" />
+        <Point X="7.002" Y="12.626" Type="JumpStart" />
+        <Point X="6.835" Y="12.626" Type="JumpEnd" />
+        <Point X="6.447" Y="12.626" />
+        <Point X="6.447" Y="7.796" />
+        <Point X="5.25" Y="7.796" />
+        <Point X="5.25" Y="7.546" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>bgAAAAggMDRAIhAAAAiQAIAGEAAACBAAgIBAABAEAGA=</HashCode>
+      <FileName>TeacherProfile.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="teacherToProfile" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Student_Register.Utility">
+    <Position X="19" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Utility.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Student_Register.Properties.Resources">
+    <Position X="19" Y="2" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAABEAAAAQAAAAAAAAAAAACAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Student_Register.Properties.Settings">
+    <Position X="19" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAABAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
